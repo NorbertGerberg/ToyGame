@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\Audio.hpp" />
+    <ClInclude Include="engine\AudioSrc.hpp" />
+    <ClInclude Include="engine\Console.hpp" />
+    <ClInclude Include="engine\Debug.hpp" />
+    <ClInclude Include="engine\EDR.hpp" />
+    <ClInclude Include="engine\Gamepad.hpp" />
+    <ClInclude Include="engine\Graphics.hpp" />
+    <ClInclude Include="engine\imgui\fs_ocornut_imgui.bin.h" />
+    <ClInclude Include="engine\imgui\imconfig.h" />
+    <ClInclude Include="engine\imgui\imgui.h" />
+    <ClInclude Include="engine\imgui\imgui_impl_bgfx.h" />
+    <ClInclude Include="engine\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="engine\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="engine\imgui\imgui_internal.h" />
+    <ClInclude Include="engine\imgui\imgui_stdlib.h" />
+    <ClInclude Include="engine\imgui\imstb_rectpack.h" />
+    <ClInclude Include="engine\imgui\imstb_textedit.h" />
+    <ClInclude Include="engine\imgui\imstb_truetype.h" />
+    <ClInclude Include="engine\imgui\vs_ocornut_imgui.bin.h" />
+    <ClInclude Include="engine\Input.hpp" />
+    <ClInclude Include="engine\Keyboard.hpp" />
+    <ClInclude Include="engine\Layer.hpp" />
+    <ClInclude Include="engine\Mouse.hpp" />
+    <ClInclude Include="engine\Quality.hpp" />
+    <ClInclude Include="engine\RenderAPI.hpp" />
+    <ClInclude Include="engine\Renderer.hpp" />
+    <ClInclude Include="engine\Shader.hpp" />
+    <ClInclude Include="engine\soloud\darray.h" />
+    <ClInclude Include="engine\soloud\dr_flac.h" />
+    <ClInclude Include="engine\soloud\dr_mp3.h" />
+    <ClInclude Include="engine\soloud\dr_wav.h" />
+    <ClInclude Include="engine\soloud\klatt.h" />
+    <ClInclude Include="engine\soloud\miniaudio.h" />
+    <ClInclude Include="engine\soloud\resonator.h" />
+    <ClInclude Include="engine\soloud\sid.h" />
+    <ClInclude Include="engine\soloud\soloud.h" />
+    <ClInclude Include="engine\soloud\soloud_audiosource.h" />
+    <ClInclude Include="engine\soloud\soloud_bassboostfilter.h" />
+    <ClInclude Include="engine\soloud\soloud_biquadresonantfilter.h" />
+    <ClInclude Include="engine\soloud\soloud_bus.h" />
+    <ClInclude Include="engine\soloud\soloud_c.h" />
+    <ClInclude Include="engine\soloud\soloud_dcremovalfilter.h" />
+    <ClInclude Include="engine\soloud\soloud_echofilter.h" />
+    <ClInclude Include="engine\soloud\soloud_error.h" />
+    <ClInclude Include="engine\soloud\soloud_fader.h" />
+    <ClInclude Include="engine\soloud\soloud_fft.h" />
+    <ClInclude Include="engine\soloud\soloud_fftfilter.h" />
+    <ClInclude Include="engine\soloud\soloud_file.h" />
+    <ClInclude Include="engine\soloud\soloud_file_hack_off.h" />
+    <ClInclude Include="engine\soloud\soloud_file_hack_on.h" />
+    <ClInclude Include="engine\soloud\soloud_filter.h" />
+    <ClInclude Include="engine\soloud\soloud_flangerfilter.h" />
+    <ClInclude Include="engine\soloud\soloud_freeverbfilter.h" />
+    <ClInclude Include="engine\soloud\soloud_internal.h" />
+    <ClInclude Include="engine\soloud\soloud_lofifilter.h" />
+    <ClInclude Include="engine\soloud\soloud_misc.h" />
+    <ClInclude Include="engine\soloud\soloud_monotone.h" />
+    <ClInclude Include="engine\soloud\soloud_noise.h" />
+    <ClInclude Include="engine\soloud\soloud_openmpt.h" />
+    <ClInclude Include="engine\soloud\soloud_queue.h" />
+    <ClInclude Include="engine\soloud\soloud_robotizefilter.h" />
+    <ClInclude Include="engine\soloud\soloud_sfxr.h" />
+    <ClInclude Include="engine\soloud\soloud_speech.h" />
+    <ClInclude Include="engine\soloud\soloud_tedsid.h" />
+    <ClInclude Include="engine\soloud\soloud_thread.h" />
+    <ClInclude Include="engine\soloud\soloud_vic.h" />
+    <ClInclude Include="engine\soloud\soloud_vizsn.h" />
+    <ClInclude Include="engine\soloud\soloud_wav.h" />
+    <ClInclude Include="engine\soloud\soloud_waveshaperfilter.h" />
+    <ClInclude Include="engine\soloud\soloud_wavstream.h" />
+    <ClInclude Include="engine\soloud\stb_vorbis.h" />
+    <ClInclude Include="engine\soloud\ted.h" />
+    <ClInclude Include="engine\soloud\tts.h" />
+    <ClInclude Include="engine\String.hpp" />
+    <ClInclude Include="engine\System.hpp" />
+    <ClInclude Include="engine\Task.hpp" />
+    <ClInclude Include="engine\Texture.hpp" />
+    <ClInclude Include="engine\Time.hpp" />
+    <ClInclude Include="engine\Tools.hpp" />
+    <ClInclude Include="engine\Types.hpp" />
+    <ClInclude Include="engine\Viewport2D.hpp" />
+    <ClInclude Include="engine\Viewport3D.hpp" />
+    <ClInclude Include="engine\Window.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine\Audio.cpp" />
+    <ClCompile Include="engine\Console.cpp" />
+    <ClCompile Include="engine\EDR.cpp" />
+    <ClCompile Include="engine\Gamepad.cpp" />
+    <ClCompile Include="engine\Graphics.cpp" />
+    <ClCompile Include="engine\imgui\imgui.cpp" />
+    <ClCompile Include="engine\imgui\imgui_demo.cpp" />
+    <ClCompile Include="engine\imgui\imgui_draw.cpp" />
+    <ClCompile Include="engine\imgui\imgui_impl_bgfx.cpp" />
+    <ClCompile Include="engine\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="engine\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="engine\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="engine\imgui\imgui_tables.cpp" />
+    <ClCompile Include="engine\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="engine\Input.cpp" />
+    <ClCompile Include="engine\Keyboard.cpp" />
+    <ClCompile Include="engine\Layer.cpp" />
+    <ClCompile Include="engine\Mouse.cpp" />
+    <ClCompile Include="engine\Renderer.cpp" />
+    <ClCompile Include="engine\Shader.cpp" />
+    <ClCompile Include="engine\soloud\darray.cpp" />
+    <ClCompile Include="engine\soloud\dr_impl.cpp" />
+    <ClCompile Include="engine\soloud\klatt.cpp" />
+    <ClCompile Include="engine\soloud\resonator.cpp" />
+    <ClCompile Include="engine\soloud\sid.cpp" />
+    <ClCompile Include="engine\soloud\soloud.cpp" />
+    <ClCompile Include="engine\soloud\soloud_alsa.cpp" />
+    <ClCompile Include="engine\soloud\soloud_audiosource.cpp" />
+    <ClCompile Include="engine\soloud\soloud_bassboostfilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_biquadresonantfilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_bus.cpp" />
+    <ClCompile Include="engine\soloud\soloud_c.cpp" />
+    <ClCompile Include="engine\soloud\soloud_coreaudio.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_3d.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_basicops.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_faderops.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_filterops.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_getters.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_setters.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_voicegroup.cpp" />
+    <ClCompile Include="engine\soloud\soloud_core_voiceops.cpp" />
+    <ClCompile Include="engine\soloud\soloud_dcremovalfilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_echofilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_fader.cpp" />
+    <ClCompile Include="engine\soloud\soloud_fft.cpp" />
+    <ClCompile Include="engine\soloud\soloud_fftfilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_fft_lut.cpp" />
+    <ClCompile Include="engine\soloud\soloud_file.cpp" />
+    <ClCompile Include="engine\soloud\soloud_filter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_flangerfilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_freeverbfilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_jack.cpp" />
+    <ClCompile Include="engine\soloud\soloud_lofifilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_miniaudio.cpp" />
+    <ClCompile Include="engine\soloud\soloud_misc.cpp" />
+    <ClCompile Include="engine\soloud\soloud_monotone.cpp" />
+    <ClCompile Include="engine\soloud\soloud_noise.cpp" />
+    <ClCompile Include="engine\soloud\soloud_nosound.cpp" />
+    <ClCompile Include="engine\soloud\soloud_null.cpp" />
+    <ClCompile Include="engine\soloud\soloud_openal.cpp" />
+    <ClCompile Include="engine\soloud\soloud_openal_dll.c" />
+    <ClCompile Include="engine\soloud\soloud_openmpt.cpp" />
+    <ClCompile Include="engine\soloud\soloud_openmpt_dll.c" />
+    <ClCompile Include="engine\soloud\soloud_opensles.cpp" />
+    <ClCompile Include="engine\soloud\soloud_oss.cpp" />
+    <ClCompile Include="engine\soloud\soloud_portaudio.cpp" />
+    <ClCompile Include="engine\soloud\soloud_portaudio_dll.c" />
+    <ClCompile Include="engine\soloud\soloud_queue.cpp" />
+    <ClCompile Include="engine\soloud\soloud_robotizefilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_sdl1.cpp" />
+    <ClCompile Include="engine\soloud\soloud_sdl1_dll.c" />
+    <ClCompile Include="engine\soloud\soloud_sdl2.cpp" />
+    <ClCompile Include="engine\soloud\soloud_sdl2_dll.c" />
+    <ClCompile Include="engine\soloud\soloud_sdl2_static.cpp" />
+    <ClCompile Include="engine\soloud\soloud_sdl_static.cpp" />
+    <ClCompile Include="engine\soloud\soloud_sfxr.cpp" />
+    <ClCompile Include="engine\soloud\soloud_speech.cpp" />
+    <ClCompile Include="engine\soloud\soloud_tedsid.cpp" />
+    <ClCompile Include="engine\soloud\soloud_thread.cpp" />
+    <ClCompile Include="engine\soloud\soloud_vic.cpp" />
+    <ClCompile Include="engine\soloud\soloud_vizsn.cpp" />
+    <ClCompile Include="engine\soloud\soloud_wasapi.cpp" />
+    <ClCompile Include="engine\soloud\soloud_wav.cpp" />
+    <ClCompile Include="engine\soloud\soloud_waveshaperfilter.cpp" />
+    <ClCompile Include="engine\soloud\soloud_wavstream.cpp" />
+    <ClCompile Include="engine\soloud\soloud_winmm.cpp" />
+    <ClCompile Include="engine\soloud\soloud_xaudio2.cpp" />
+    <ClCompile Include="engine\soloud\stb_vorbis.c" />
+    <ClCompile Include="engine\soloud\ted.cpp" />
+    <ClCompile Include="engine\soloud\tts.cpp" />
+    <ClCompile Include="engine\String.cpp" />
+    <ClCompile Include="engine\System.cpp" />
+    <ClCompile Include="engine\Task.cpp" />
+    <ClCompile Include="engine\Texture.cpp" />
+    <ClCompile Include="engine\Time.cpp" />
+    <ClCompile Include="engine\Tools.cpp" />
+    <ClCompile Include="engine\Viewport2D.cpp" />
+    <ClCompile Include="engine\Viewport3D.cpp" />
+    <ClCompile Include="engine\Window.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{348d9b03-2501-4751-8ed8-ef9fd0d68f79}</ProjectGuid>
+    <RootNamespace>ToyGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\THIRDPARTY\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\THIRDPARTY\lib\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\THIRDPARTY\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\THIRDPARTY\lib\release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>/NODEFAULTLIB:LIBCMT;/NODEFAULTLIB:MSVCRTD;XInput.lib;bgfxDebug.lib;bimg_decodeDebug.lib;bimgDebug.lib;bxDebug.lib;glfw3dll.lib;zip.lib;zlibd.lib;zlibstaticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>/NODEFAULTLIB:LIBCMT;/NODEFAULTLIB:MSVCRTD;XInput.lib;bgfxRelease.lib;bimg_decodeRelease.lib;bimgRelease.lib;bxRelease.lib;glfw3.lib;zip.lib;zlib.lib;zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

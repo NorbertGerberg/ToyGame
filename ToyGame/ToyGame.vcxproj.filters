@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{d0b357bb-0233-4c21-8673-e66259f1c7e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\header">
+      <UniqueIdentifier>{03ec08ef-c4c3-4be6-9ac5-7bf5cfe12518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\source">
+      <UniqueIdentifier>{6a8a9a1e-3b56-4758-a118-cf1be4097c5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\header\soloud">
+      <UniqueIdentifier>{dd291289-5f8d-4a09-8037-57ffc4568866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\source\soloud">
+      <UniqueIdentifier>{cabcaec0-7f0c-4a33-9c19-9b1bde048063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\header\imgui">
+      <UniqueIdentifier>{889dfaa6-8c8c-439b-866f-5b6a42bd4640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\source\imgui">
+      <UniqueIdentifier>{3782d428-1142-426a-b7af-c43b62bffd41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\Console.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\EDR.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Gamepad.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Input.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Keyboard.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Mouse.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\String.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Time.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Tools.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Types.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Window.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Task.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Audio.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\AudioSrc.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\darray.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\dr_flac.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\dr_mp3.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\dr_wav.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\klatt.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\miniaudio.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\resonator.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\sid.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_audiosource.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_bassboostfilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_biquadresonantfilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_bus.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_c.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_dcremovalfilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_echofilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_error.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_fader.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_fft.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_fftfilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_file.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_file_hack_off.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_file_hack_on.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_filter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_flangerfilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_freeverbfilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_internal.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_lofifilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_misc.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_monotone.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_noise.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_openmpt.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_queue.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_robotizefilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_sfxr.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_speech.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_tedsid.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_thread.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_vic.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_vizsn.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_wav.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_waveshaperfilter.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\soloud_wavstream.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\stb_vorbis.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\ted.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\soloud\tts.h">
+      <Filter>Engine\header\soloud</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Graphics.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Shader.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Debug.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Layer.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Texture.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Quality.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Viewport2D.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Viewport3D.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\fs_ocornut_imgui.bin.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imconfig.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imgui.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imgui_impl_bgfx.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imgui_impl_glfw.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imgui_impl_win32.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imgui_internal.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imgui_stdlib.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imstb_rectpack.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imstb_textedit.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\imstb_truetype.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\imgui\vs_ocornut_imgui.bin.h">
+      <Filter>Engine\header\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\RenderAPI.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Renderer.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\System.hpp">
+      <Filter>Engine\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine\Console.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\EDR.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Gamepad.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Input.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Keyboard.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Mouse.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\String.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Time.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Tools.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Window.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Task.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Audio.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_openal_dll.c">
+      <Filter>Engine\header\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_openmpt_dll.c">
+      <Filter>Engine\header\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_portaudio_dll.c">
+      <Filter>Engine\header\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_sdl1_dll.c">
+      <Filter>Engine\header\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_sdl2_dll.c">
+      <Filter>Engine\header\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\stb_vorbis.c">
+      <Filter>Engine\header\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\darray.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\dr_impl.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\klatt.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\resonator.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\sid.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_alsa.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_audiosource.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_bassboostfilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_biquadresonantfilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_bus.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_c.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_3d.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_basicops.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_faderops.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_filterops.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_getters.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_setters.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_voicegroup.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_core_voiceops.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_coreaudio.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_dcremovalfilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_echofilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_fader.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_fft.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_fft_lut.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_fftfilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_file.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_filter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_flangerfilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_freeverbfilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_jack.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_lofifilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_miniaudio.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_misc.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_monotone.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_noise.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_nosound.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_null.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_openal.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_openmpt.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_opensles.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_oss.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_portaudio.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_queue.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_robotizefilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_sdl_static.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_sdl1.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_sdl2.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_sdl2_static.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_sfxr.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_speech.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_tedsid.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_thread.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_vic.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_vizsn.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_wasapi.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_wav.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_waveshaperfilter.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_wavstream.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_winmm.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\soloud_xaudio2.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\ted.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\soloud\tts.cpp">
+      <Filter>Engine\source\soloud</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Graphics.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Shader.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Layer.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Texture.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Viewport2D.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Viewport3D.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_demo.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_draw.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_impl_bgfx.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_impl_glfw.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_impl_win32.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_stdlib.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_tables.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\imgui\imgui_widgets.cpp">
+      <Filter>Engine\source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Renderer.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\System.cpp">
+      <Filter>Engine\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
