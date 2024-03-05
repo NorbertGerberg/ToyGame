@@ -3,6 +3,8 @@
 =========================================*/
 #include "Mouse.hpp"
 #include "Console.hpp"
+#include "Texture.hpp"
+#include <stb_image.h>
 
 void eMouse::SetPositionCallback(NGE_MOUSE_POSCALLBACK callback)
 {
@@ -82,4 +84,44 @@ const bool eMouse::GetButtonReleased(const int key)
 	if (glfwGetMouseButton(GetGLFWwindow(), key) == GLFW_RELEASE)
 		return true;
 	return false;
+}
+
+void eMouse::SetCursor(int type)
+{
+	GLFWwindow* window = GetGLFWwindow();
+
+	if (mCursor != nullptr)
+	{
+		glfwSetCursor(window, nullptr);
+		glfwDestroyCursor(mCursor);
+	}
+
+	mCursor = glfwCreateStandardCursor(type);
+	glfwSetCursor(window, mCursor);
+}
+
+void eMouse::SetCursorImage(eString filename, vec2i xyhot)
+{
+	GLFWwindow* window = GetGLFWwindow();
+
+	if (mCursor != nullptr)
+	{
+		glfwSetCursor(window, nullptr);
+		glfwDestroyCursor(mCursor);
+	}
+
+	stbi_set_flip_vertically_on_load(false);
+	int width, height, nrComponents;
+	unsigned char* data = stbi_load(filename.Get(), &width, &height, &nrComponents, 0);
+
+	if (data != nullptr)
+	{
+		GLFWimage image;
+		image.width = width;
+		image.height = height;
+		image.pixels = data;
+		mCursor = glfwCreateCursor(&image, xyhot.x, xyhot.y);
+		stbi_image_free(data);
+		glfwSetCursor(window, mCursor);
+	}
 }

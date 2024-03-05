@@ -1,0 +1,23 @@
+﻿  Graphics.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: "APIENTRY": Makro-Neudefinition
+H:\ToyGame\ToyGame\THIRDPARTY\include\GLFW\glfw3.h(123): message : Siehe vorherige Definition von "APIENTRY"
+H:\ToyGame\ToyGame\ToyGame\engine\Graphics.cpp(74,18): warning C4353: Nicht dem Standard entsprechende Erweiterung: Konstante 0 als Funktionsausdruck. Verwenden Sie stattdessen die systeminterne __noop-Funktion.
+H:\ToyGame\ToyGame\ToyGame\engine\Graphics.cpp(85,18): warning C4353: Nicht dem Standard entsprechende Erweiterung: Konstante 0 als Funktionsausdruck. Verwenden Sie stattdessen die systeminterne __noop-Funktion.
+  Input.cpp
+  Keyboard.cpp
+  Layer.cpp
+  Mouse.cpp
+  Renderer.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: "APIENTRY": Makro-Neudefinition
+H:\ToyGame\ToyGame\THIRDPARTY\include\GLFW\glfw3.h(123): message : Siehe vorherige Definition von "APIENTRY"
+  Shader.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: "APIENTRY": Makro-Neudefinition
+H:\ToyGame\ToyGame\THIRDPARTY\include\GLFW\glfw3.h(123): message : Siehe vorherige Definition von "APIENTRY"
+H:\ToyGame\ToyGame\ToyGame\engine\Shader.cpp(32,36): warning C4002: Zu viele Argumente für den Aufruf des funktionsähnlichen Makros "TG_ASSERT".
+H:\ToyGame\ToyGame\ToyGame\engine\Shader.cpp(87,16): warning C4353: Nicht dem Standard entsprechende Erweiterung: Konstante 0 als Funktionsausdruck. Verwenden Sie stattdessen die systeminterne __noop-Funktion.
+  Task.cpp
+  Texture.cpp
+  Window.cpp
+H:\ToyGame\ToyGame\ToyGame\engine\Window.cpp(191,20): warning C4244: "=": Konvertierung von "real3" in "int", möglicher Datenverlust
+H:\ToyGame\ToyGame\ToyGame\engine\Window.cpp(192,21): warning C4244: "=": Konvertierung von "real3" in "int", möglicher Datenverlust
+  ToyGame.vcxproj -> H:\ToyGame\ToyGame\x64\Release\ToyGame.lib

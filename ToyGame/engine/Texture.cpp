@@ -207,7 +207,7 @@ void eTexture::LoadMem(eTextureData& data, uint64 flags)
 		if (bgfx::isValid(mHandle))
 			bgfx::setName(mHandle, data.mName.Get());
 
-		mSize = data.mSize;
+		mSize = vec2i(data.mSize.x, data.mSize.y);
 	}
 	else
 	{

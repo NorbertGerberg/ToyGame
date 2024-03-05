@@ -31,6 +31,15 @@ constexpr auto NGE_INPUT_MOUSE_BUTTON_LEFT = 0;
 constexpr auto NGE_INPUT_MOUSE_BUTTON_RIGHT = 1;
 constexpr auto NGE_INPUT_MOUSE_BUTTON_MIDDLE = 2;
 
+constexpr auto NGE_INPUT_MOUSE_CURSOR_ARROW			= 0x00036001;
+constexpr auto NGE_INPUT_MOUSE_CURSOR_IBEAM			= 0x00036002;
+constexpr auto NGE_INPUT_MOUSE_CURSOR_CROSSHAIR		= 0x00036003;
+constexpr auto NGE_INPUT_MOUSE_CURSOR_HAND			= 0x00036004;
+constexpr auto NGE_INPUT_MOUSE_CURSOR_HRESIZE		= 0x00036005;
+constexpr auto NGE_INPUT_MOUSE_CURSOR_VRESIZE		= 0x00036006;
+
+class eTexture;
+
 class eMouse : public eInput
 {
 public:
@@ -48,5 +57,10 @@ public:
 	void SetScrollCallback(NGE_MOUSE_SCROLLCALLBACK& callback);
 	const bool GetButtonPressed(const int key);
 	const bool GetButtonReleased(const int key);
+	void SetCursor(int type);
+	void SetCursorImage(eString filename, vec2i xyhot = vec2i(0));
+
+private:
+	GLFWcursor* mCursor;
 };
 #endif
