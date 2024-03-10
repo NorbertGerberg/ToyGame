@@ -64,6 +64,7 @@ public:
 	vec2i GetMonitorSize();
 	void SetUserPointer(void* ptr);
 	void* GetUserPointer();
+	void SwitchFullscreenEx();
 
 	GLFWwindow* GetGLFWwindow();
 

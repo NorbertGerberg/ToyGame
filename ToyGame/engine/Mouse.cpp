@@ -86,42 +86,43 @@ const bool eMouse::GetButtonReleased(const int key)
 	return false;
 }
 
-void eMouse::SetCursor(int type)
+void eMouse::CreateCursor(eMouseCursor* cursor, int type)
 {
-	GLFWwindow* window = GetGLFWwindow();
-
-	if (mCursor != nullptr)
-	{
-		glfwSetCursor(window, nullptr);
-		glfwDestroyCursor(mCursor);
-	}
-
-	mCursor = glfwCreateStandardCursor(type);
-	glfwSetCursor(window, mCursor);
+	if (cursor != nullptr)
+		glfwDestroyCursor(cursor);
+	cursor = glfwCreateStandardCursor(type);
 }
 
-void eMouse::SetCursorImage(eString filename, vec2i xyhot)
+void eMouse::CreateImageCursor(eMouseCursor* cursor, eString filename, bool flipV, vec2i xyhot)
 {
-	GLFWwindow* window = GetGLFWwindow();
+	if (cursor != nullptr)
+		glfwDestroyCursor(cursor);
 
-	if (mCursor != nullptr)
-	{
-		glfwSetCursor(window, nullptr);
-		glfwDestroyCursor(mCursor);
-	}
-
-	stbi_set_flip_vertically_on_load(false);
+	stbi_set_flip_vertically_on_load(flipV);
 	int width, height, nrComponents;
 	unsigned char* data = stbi_load(filename.Get(), &width, &height, &nrComponents, 0);
-
 	if (data != nullptr)
 	{
 		GLFWimage image;
 		image.width = width;
 		image.height = height;
 		image.pixels = data;
-		mCursor = glfwCreateCursor(&image, xyhot.x, xyhot.y);
+		cursor = glfwCreateCursor(&image, xyhot.x, xyhot.y);
 		stbi_image_free(data);
-		glfwSetCursor(window, mCursor);
+	}
+	stbi_set_flip_vertically_on_load(false);
+}
+
+void eMouse::SetCursor(eMouseCursor* cursor)
+{
+	glfwSetCursor(GetGLFWwindow(), cursor);
+}
+
+void eMouse::DestroyCursor(eMouseCursor* cursor)
+{
+	if (cursor != nullptr)
+	{
+		glfwDestroyCursor(cursor);
+		cursor = nullptr;
 	}
 }

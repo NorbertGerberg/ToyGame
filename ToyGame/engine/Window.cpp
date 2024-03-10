@@ -316,3 +316,10 @@ GLFWmonitor* eWindow::get_current_monitor(GLFWwindow* window)
 	}
 	return bestmonitor;
 }
+
+void eWindow::SwitchFullscreenEx()
+{
+	SetWindowDecorated(false);
+	SetWindowPosition(vec2i(0));
+	AutoSize();
+}

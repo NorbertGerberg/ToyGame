@@ -38,6 +38,8 @@ constexpr auto NGE_INPUT_MOUSE_CURSOR_HAND			= 0x00036004;
 constexpr auto NGE_INPUT_MOUSE_CURSOR_HRESIZE		= 0x00036005;
 constexpr auto NGE_INPUT_MOUSE_CURSOR_VRESIZE		= 0x00036006;
 
+typedef GLFWcursor eMouseCursor;
+
 class eTexture;
 
 class eMouse : public eInput
@@ -57,10 +59,9 @@ public:
 	void SetScrollCallback(NGE_MOUSE_SCROLLCALLBACK& callback);
 	const bool GetButtonPressed(const int key);
 	const bool GetButtonReleased(const int key);
-	void SetCursor(int type);
-	void SetCursorImage(eString filename, vec2i xyhot = vec2i(0));
-
-private:
-	GLFWcursor* mCursor;
+	void CreateCursor(eMouseCursor* cursor, int type);
+	void CreateImageCursor(eMouseCursor* cursor, eString filename, bool flipV = false, vec2i xyhot = vec2i(0));
+	void SetCursor(eMouseCursor* cursor);
+	void DestroyCursor(eMouseCursor* cursor);
 };
 #endif
