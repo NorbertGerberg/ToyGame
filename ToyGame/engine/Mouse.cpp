@@ -93,7 +93,7 @@ void eMouse::CreateCursor(eMouseCursor* cursor, int type)
 	cursor = glfwCreateStandardCursor(type);
 }
 
-void eMouse::CreateImageCursor(eMouseCursor* cursor, eString filename, bool flipV, vec2i xyhot)
+eMouseCursor* eMouse::CreateImageCursor(eMouseCursor* cursor, eString filename, bool flipV, vec2i xyhot)
 {
 	if (cursor != nullptr)
 		glfwDestroyCursor(cursor);
@@ -111,6 +111,7 @@ void eMouse::CreateImageCursor(eMouseCursor* cursor, eString filename, bool flip
 		stbi_image_free(data);
 	}
 	stbi_set_flip_vertically_on_load(false);
+	return cursor;
 }
 
 void eMouse::SetCursor(eMouseCursor* cursor)
@@ -118,11 +119,12 @@ void eMouse::SetCursor(eMouseCursor* cursor)
 	glfwSetCursor(GetGLFWwindow(), cursor);
 }
 
-void eMouse::DestroyCursor(eMouseCursor* cursor)
+eMouseCursor* eMouse::DestroyCursor(eMouseCursor* cursor)
 {
 	if (cursor != nullptr)
 	{
 		glfwDestroyCursor(cursor);
 		cursor = nullptr;
 	}
+	return nullptr;
 }

@@ -60,8 +60,8 @@ public:
 	const bool GetButtonPressed(const int key);
 	const bool GetButtonReleased(const int key);
 	void CreateCursor(eMouseCursor* cursor, int type);
-	void CreateImageCursor(eMouseCursor* cursor, eString filename, bool flipV = false, vec2i xyhot = vec2i(0));
+	eMouseCursor* CreateImageCursor(eMouseCursor* cursor, eString filename, bool flipV = false, vec2i xyhot = vec2i(0));
 	void SetCursor(eMouseCursor* cursor);
-	void DestroyCursor(eMouseCursor* cursor);
+	eMouseCursor* DestroyCursor(eMouseCursor* cursor);
 };
 #endif
